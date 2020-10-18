@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="isi_biodata">ISI BIODATA</string>
+    <string name="nama">NAMA</string>
+    <string name="isi_nama">isi nama</string>
+    <string name="npm">NPM</string>
+    <string name="isi_npm">isi npm</string>
+    <string name="jurusan">Jurusan :</string>
+    <string name="teknik_informatika">Teknik Informatika</string>
+    <string name="bahasa_inggris">Bahasa Inggris</string>
+    <string name="manajemen">Manajemen</string>
+    <string name="akuntansi">Akuntansi</string>
+    <string name="submit">Submit</string>
 </resources>
