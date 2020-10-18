@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#7DAF9C"
+    tools:context=".MainActivityBiodata"
+    >
+
+    <TextView
+        android:id="@+id/biodata"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/isi_biodata"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#23967F"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/biodata"
+        android:layout_alignParentLeft="true"
+        android:text="@string/nama"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/isinama"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/isi_nama"
+        android:layout_below="@+id/biodata"
+        android:layout_toRightOf="@+id/nama"
+        android:layout_toEndOf="@+id/nama"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/npm"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/npm"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nama"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/isinpm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/isi_npm"
+        android:layout_below="@id/isinama"
+        android:layout_toEndOf="@+id/npm"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/jurusan"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/npm"
+        android:layout_alignParentLeft="true"
+        android:text="@string/jurusan"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentStart="true" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/jurusan"
+        android:layout_toRightOf="@+id/jurusan"
+        android:layout_below="@+id/isinpm"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/teknik_informatika"
+            android:textColor="#FFFFFF" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/bahasa_inggris"
+            android:textColor="#FFFFFF"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/manajemen"
+            android:textColor="#FFFFFF"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/akuntansi"
+            android:textColor="#FFFFFF"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="quitApp"
+        android:text="@string/submit"/>
+
+
+</RelativeLayout>
